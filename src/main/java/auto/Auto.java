@@ -2,7 +2,7 @@ package auto;
 
 public class Auto {
     public static final double PALIVO_NA_KM = 0.2;
-    public static final double KAPACITA_NADRZE = 100
+    public static final double KAPACITA_NADRZE = 100;
     private double kapacitaNadrze;
     private double stavNadrze;
     private boolean ojazdene;
