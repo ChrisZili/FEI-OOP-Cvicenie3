@@ -2,9 +2,21 @@ package auto;
 
 public class Auto {
     public static final double PALIVO_NA_KM = 0.2;
+    public static final double KAPACITA_NADRZE = 100
     private double kapacitaNadrze;
     private double stavNadrze;
     private boolean ojazdene;
+
+    public Auto(){
+        this(KAPACITA_NADRZE);
+    }
+
+    public Auto(double kapacitaNadrze){
+        this.ojazdene = true;
+        this.kapacitaNadrze = kapacitaNadrze;
+        this.stavNadrze = 50;
+
+    }
 
     public void jazdi(double vzdialenost){
         this.ojazdene = true;
