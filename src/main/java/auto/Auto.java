@@ -1,13 +1,16 @@
 package auto;
 
 public class Auto {
-    int pocetKolies;
-    int pocetDveri;
-    String nazov;
+    public double kapacitaNadrze;
+    public double stavNadrze;
 
-    public int jedna;
-    int dva;
-//    protected pri dedeni, vedia pristupovat k atributom iba dcerske triedy
-    protected int tri;
-    private int styri;
+    public void jazdi(double vzdialenost){
+        stavNadrze -= vzdialenost * 0.2;
+        if(stavNadrze < 0){
+            stavNadrze = 0;
+        }
+    }
+
+
+
 }

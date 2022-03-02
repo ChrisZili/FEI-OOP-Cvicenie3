@@ -3,16 +3,12 @@ import auto.Auto;
 public class Main {
     public static void main(String[] args){
         Auto skoda = new Auto();
-        Auto bmw = new Auto();
 
-        skoda.jedna = 1;
-        bmw.jedna = 2;
+        skoda.stavNadrze = 50;
+        skoda.jazdi(100);
+        System.out.println(skoda.stavNadrze);
 
-        if(skoda.jedna == bmw.jedna){
-            System.out.println("Rovnake");
-
-        }else{
-            System.out.println("Rozne");
-        }
+        skoda.jazdi(200);
+        System.out.println(skoda.stavNadrze);
     }
 }
