@@ -14,7 +14,7 @@ public class Auto {
     public Auto(double kapacitaNadrze){
         this.ojazdene = true;
         this.kapacitaNadrze = kapacitaNadrze;
-        this.stavNadrze = 50;
+        this.stavNadrze = 100;
 
     }
 
